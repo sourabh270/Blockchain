@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BlockChain</title>
+    <link rel="stylesheet" href="site.css" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header1">Polygon Edge Provisioning</div>
+      <div class="header2">This form will provision resources as per specifications</div>
+    </header>
+
+    <main>
+      <article>
+        <div class="welcome_msg">Hi, Sourabh. When you submit this form, the owner will see your name and email address.
+        </div >
+           <div class="required"> <span >* </span>Required</div>
+
+
+        <form action="http://localhost:7071/api/post" method="POST">
+
+          <div class="input-group">
+            <div class="input-text"><label for="Name">1. Name</label></div>
+            <div class="input-field"><input type="text" name="Name" id="name" placeholder="Enter your answer" /></div>
+          </div>
+          <div class="input-group">
+            <div class="input-text"><label for="Name">2. Number of nodes that you want (Inclusive of bootnodes)</label></div>
+            <div class="input-field"><input type="text" name="Node" id="node" placeholder="Enter your answer" /></div>
+          </div>
+          <div class="input-group">
+            <div class="input-text"><label for="Name">3. Number of boot nodes that you want</label></div>
+            <div class="input-field"><input type="text" name="Boot" id="boot" placeholder="The value must be a number" /></div>
+          </div>
+          <div class="input-group">
+            <div class="input-text"><label for="Name">4. Chain ID</label></div>
+            <div class="input-field"><input type="text" name="ChainId" id="chainId" placeholder="The value must be a number" /></div>
+          </div>
+          <div class="input-group">
+            <div class="input-text"><label for="Name">5. Chain Name</label></div>
+            <div class="input-field"><input type="text" name="ChainName" id="chainName" placeholder="Enter your answer" /></div>
+          </div>
+
+            <div class="input-text"><label for="Name">6. Consensus Mechanism</label></div> 
+            <div class="input-field">
+              <input type="radio" id="PoA" name="poa" value="POA">
+                <label for="html">Proof of Authority (PoA)</label><br>
+                <input type="radio" id="PoS" name="pos" value="POS">
+                <label for="css">Proof of Stake (PoS)</label><br>
+            </div>
+         
+          <div class="input-group">
+            <div class="input-text"><label for="Name">7. Block gas limit</label></div>
+            <div class="input-field"><input type="text" name="GasLimit" id="gasLimit" placeholder="Enter your answer" /></div>
+          </div>
+
+          <!-- <div class="input-group">
+            <div><label for="comments">Comments</label></div>
+            <div>
+              <textarea
+                name="comments"
+                id="comments"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+          </div> -->
+
+          <input type="submit" value="Submit" />
+        </form>
+      </article>
+    </main>
+    <footer>
+      <div>
+        This content is created by the owner of the form. The data you submit will be sent to the form owner. Microsoft is not responsible for the privacy or security practices of its customers, including those of this form owner. Never give out your password.
+      </div>
+      <div>    
+      Powered by Microsoft Forms | Privacy and cookies | Terms of use
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <!-- <script type="text/javascript">
+        
+    </script> -->
+    <!-- </div> -->
+  </body>
+</html>
